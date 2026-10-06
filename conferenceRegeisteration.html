@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullName">Full Name</label>
+            <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                minlength="2"
+                required/>
+            <br/><br/>
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required/>
+            <br/><br/>
+
+            <label for="phone">Phone</label>
+            <input  
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{10}"
+                required/>
+            <br/><br/>
+        </fieldset>
+        <br/>
+
+        <fieldset>
+            <legend>Ticket & Workshops</legend>
+
+            <label for="ticketType">Ticket type</label>
+            <select 
+                id="ticketType"
+                name="ticketType" 
+                required>
+                <option value="standard">Standard</option>
+                <option value="vip">VIP</option>
+                <option value="student">Student</option>
+            </select>
+            <br/><br/>
+
+            <legend>Workshops</legend>
+
+            <label for="webPerformance">Web Performance</label>
+            <input
+                type="checkbox"
+                id="webPerformance"
+                name="workshop"
+                value="Web Performance"/>
+
+            <label for="accessibility">Accessibility</label>
+            <input
+                type="checkbox"
+                id="accessibility"
+                name="workshop"
+                value="Accessibility"/>
+            
+            <label for="testing">Testing</label>
+            <input
+                type="checkbox"
+                id="testing"
+                name="workshop"
+                value="Testing"/>
+            <br/><br/>
+
+            <legend>Diet</legend>
+
+            <label for="none">None</label>
+            <input
+                type="radio"
+                name="diet"
+                id="none"
+                value="None">
+            
+            <label for="vegan">Vegan</label>
+            <input 
+                type="radio"
+                name="diet"
+                id="vegan
+                value=Vegan">
+
+            <label for="kosher">Kosher</label>
+            <input 
+                type="radio"
+                name="diet"
+                id="kosher"
+                value="Kosher">
+
+            <label for="halal">Halal</label>
+            <input 
+                type="radio"
+                name="diet"
+                id="halal"
+                value="Halal">
+
+            <label for="other">Other</label>
+            <input 
+                type="radio"
+                name="diet"
+                id="other"
+                value="Other">
+            <br/><br/>
+
+        </fieldset>
+        <br/><br/>
+
+        <fieldset>
+            <legend>Payment Details</legend>
+
+            <label for=""card>Card number</label>
+            <input
+                type="text"
+                id="card"
+                name="card"
+                pattern="[ 0-9]{13,19}"
+                placeholder="1234 5678 9012 3456"
+                required/>
+            <br/><br/>
+
+            <label for="expiration">Expiry date</label>
+            <input
+                type="month"
+                id="expiration"
+                name="expiration"
+                min="2026-10"
+                required>
+            <br/><br/>
+
+            <label for="cvv">CVV</label>
+            <input
+                type="password"
+                id="cvv"
+                value="cvv"
+                minlength="3"
+                maxlength="4"
+                required/>
+        </fieldset>
+        <br/>
+
+    </form>
+    
+</body>
+</html>
